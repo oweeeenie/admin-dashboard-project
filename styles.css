@@ -22,7 +22,7 @@ html {
     height: auto;
   }
 
-  /* CSS RESET IS ABOVE THIS */
+  /* CSS RESET IS ABOVE THIS  ALSO POTENTIALLY ADD A LINE-HEIGHT */
 
 :root {
     --sidebar-and-button-color: #7151a9;
