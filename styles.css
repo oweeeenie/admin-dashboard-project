@@ -1,12 +1,13 @@
 html {
     box-sizing: border-box;
     font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
   
   *, *:before, *:after {
     box-sizing: inherit;
     text-decoration: none;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
   }
   
   body, h1, h2, h3, h4, h5, h6, p, ol, ul {
@@ -40,7 +41,7 @@ html {
   height: 100vh;
   grid-template-rows: 1fr 1fr 1fr 1fr;
 }
-
+/* SIDEBAR --------------------------------------------------------------------------------------------------- */
 .sidebar-main {
   background-color: var(--sidebar-and-button-color);
   grid-row: 1 / 5;
@@ -68,10 +69,26 @@ html {
 
 .dashboard-container {
   font-size: 2rem;
+  display: flex;
+  align-items: center;
   position: relative;
   bottom: 50px;
+  gap: 1rem;
+  right: 4rem;
+  font-size: 1.8rem;
+  font-weight: bolder;
 }
 
+.fa-toolbox {
+  color: var(--primary-text-color)
+}
+
+
+
+
+/* SIDEBAR --------------------------------------------------------------------------------------------------- */
+
+/* HEADER --------------------------------------------------------------------------------------------------- */
 .header-container {
   background-color: var(--cards-and-header-color-and-right-sidebar);
   display: grid;
@@ -106,7 +123,6 @@ input[type="text"] {
   border-radius: 20px;
   width: 36vw; 
   height: 3vh;
-  padding-left: 10px;
   color: var(--primary-text-color);
 }
 
@@ -117,10 +133,10 @@ input[type="text"] {
   align-items: center;
 }
 
-.svg-container-1 {
+.icon-container-1 {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
 }
 
 .header-left {
@@ -159,4 +175,4 @@ input[type="text"] {
   border: 2px solid var(--primary-text-color);
   color: var(--primary-text-color);
 }
-
+/* HEADER --------------------------------------------------------------------------------------------------- */
