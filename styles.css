@@ -7,7 +7,6 @@ html {
   *, *:before, *:after {
     box-sizing: inherit;
     text-decoration: none;
-    
   }
   
   body, h1, h2, h3, h4, h5, h6, p, ol, ul {
@@ -41,6 +40,11 @@ html {
   height: 100vh;
   grid-template-rows: 1fr 1fr 1fr 1fr;
 }
+
+button {
+  cursor: pointer;
+}
+
 /* SIDEBAR --------------------------------------------------------------------------------------------------- */
 .sidebar-main {
   background-color: var(--sidebar-and-button-color);
@@ -67,6 +71,11 @@ html {
   margin-top: 50px;
 }
 
+.sidebar-part-two li {
+  display: flex;
+  align-items: center;
+}
+
 .dashboard-container {
   font-size: 2rem;
   display: flex;
@@ -74,18 +83,33 @@ html {
   position: relative;
   bottom: 50px;
   gap: 1rem;
-  right: 4rem;
-  font-size: 1.8rem;
+  right: 1.5rem;
+  font-size: 1.75rem;
   font-weight: bolder;
 }
 
-.fa-toolbox {
+.fa-solid,
+.sidebar-nav li {
   color: var(--primary-text-color)
 }
 
+.fa-solid:hover {
+  color: var(--behind-cards-color)
+}
 
+.sidebar-nav li {
+  display: flex;
+  gap: 20px;
+}
 
+.sidebar-nav {
+  position: relative;
+  right: 1.5rem;
+}
 
+.sidebar-nav li i {
+  width: 1.6rem;
+}
 /* SIDEBAR --------------------------------------------------------------------------------------------------- */
 
 /* HEADER --------------------------------------------------------------------------------------------------- */
@@ -175,4 +199,16 @@ input[type="text"] {
   border: 2px solid var(--primary-text-color);
   color: var(--primary-text-color);
 }
+
 /* HEADER --------------------------------------------------------------------------------------------------- */
+
+/* MAIN BODY (YOUR PROJECTS) -------------------------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+/* MAIN BODY (YOUR PROJECTS) -------------------------------------------------------------------------------- */
