@@ -5,6 +5,8 @@ html {
   
   *, *:before, *:after {
     box-sizing: inherit;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
   
   body, h1, h2, h3, h4, h5, h6, p, ol, ul {
@@ -30,4 +32,79 @@ html {
     --behind-cards-color: #46325d;
     --primary-text-color: #c7adff;
     --secondary-text-color: #ac8bee;
+}
+
+.WHOLE-PAGE-LAYOUT {
+  display: grid;
+  grid-template-columns: 20% 1fr;
+  height: 100vh;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.sidebar-main {
+  background-color: var(--sidebar-and-button-color);
+  grid-row: 1 / 5;
+  display: flex;
+  flex-direction: column;
+  padding-left: 5rem;
+  padding-top: 5rem;
+}
+
+.sidebar-nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: var(--secondary-text-color);
+}
+
+.sidebar-part-two {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.dashboard-container {
+  font-size: 2rem;
+  position: relative;
+  bottom: 50px;
+}
+
+.header-container {
+  background-color: var(--cards-and-header-color-and-right-sidebar);
+  display: grid;
+  grid-template-rows: 1 / 3;
+}
+
+.header {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "header-top-left header-top-right" "header-left header-right";
+}
+
+.header-top-right {
+  grid-area: header-top-right;
+}
+
+.header-top-left {
+  grid-area: header-top-left;
+}
+
+.header-left {
+  grid-area: header-left;
+}
+
+.header-left img,
+.header-top img {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+}
+
+.header-right {
+  position: absolute;
+  top: 500px;
 }
