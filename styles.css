@@ -3,6 +3,7 @@ html {
     font-size: 16px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     height: 100%;
+    overflow: hidden;
   }
   
   *, *:before, *:after {
@@ -212,6 +213,7 @@ input[type="text"] {
   background-color: var(--behind-cards-color);
   grid-template-areas: "main right-sidebar";
   height: 100%;
+  box-shadow: 0 -4px 6px -2px black;
 }
 
 .body-main {
@@ -232,6 +234,19 @@ input[type="text"] {
   width: 80%;
   border-radius: 15px;
   color: var(--primary-text-color);
+  display: flex;
+  font-size: 1.2rem;
+  font-weight: bold;
+  flex-direction: column;
+  gap: 10px;
+  padding: 30px;
+  box-shadow: 0 4px 6px -2px black;
+}
+
+.box p {
+  font-size: 1.0rem;
+  font-weight: normal;
+  width: 25rem;
 }
 
 .body-main h3 {
@@ -241,26 +256,59 @@ input[type="text"] {
   color: var(--primary-text-color);
 }
 
+
+/* MAIN BODY (YOUR PROJECTS) -------------------------------------------------------------------------------- */
+
+/* RIGHT SIDEBAR -------------------------------------------------------------------------------------------- */
+
 .body-right-sidebar {
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-area: right-sidebar;
   grid-template-areas: "announcements" "trending";
-  background-color: blue;
+  background-color: var(--behind-cards-color)
 }
+
+.body-announcements > h3 {
+  color: var(--primary-text-color);
+  font-weight: bolder;
+  position: relative;
+  bottom: 1.2rem;
+}
+
+.body-announcements p {
+  color: var(--secondary-text-color);
+  }
+  
+  .body-announcements h4 {
+    color: var(--primary-text-color)
+  }
 
 .body-announcements {
-  grid-area: announcements;
+  padding: 3.5rem;
 }
 
-.body-trending {
-  grid-area: trending;
+.announcement-item:not(:last-child) .announcement-content {
+  border-bottom: 1px solid var(--secondary-text-color);
+  padding-bottom: 1.5rem;
 }
 
+.announcement-item {
+  margin-bottom: 30px;
+  width: 25rem;
+}
 
+.announcement-list {
+  background-color: var(--cards-and-header-color-and-right-sidebar);
+  padding: 1.5rem;
+  height: 23rem;
+  border-radius: 5%;
+  box-shadow: 0 4px 6px -2px black;
+  width: 30rem;
+}
 
+.announcement-title {
+  padding-bottom: 10px;
+}
 
-
-
-
-/* MAIN BODY (YOUR PROJECTS) -------------------------------------------------------------------------------- */
+/* RIGHT SIDEBAR -------------------------------------------------------------------------------------------- */
