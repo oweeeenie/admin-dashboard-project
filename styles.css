@@ -3,7 +3,7 @@ html {
     font-size: 16px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     height: 100%;
-
+    overflow: hidden;
   }
   
   *, *:before, *:after {
@@ -230,23 +230,24 @@ input[type="text"] {
 
 .box {
   background-color: var(--cards-and-header-color-and-right-sidebar);
-  height: 12rem;
-  width: 80%;
+  height: 13rem;
+  width: 90%;
   border-radius: 15px;
   color: var(--primary-text-color);
   display: flex;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: bold;
   flex-direction: column;
   gap: 10px;
   padding: 30px;
   box-shadow: 0 4px 6px -2px black;
+  position: relative;
 }
 
 .box p {
-  font-size: 1.0rem;
+  font-size: 1rem;
   font-weight: normal;
-  width: 25rem;
+  width: 32rem;
 }
 
 .body-main h3 {
@@ -256,6 +257,26 @@ input[type="text"] {
   color: var(--primary-text-color);
 }
 
+.box .fa-star {
+  position: absolute;
+  right: 12rem;
+  bottom: 2rem;
+  cursor: pointer;
+}
+
+.box .fa-code {
+  position: absolute;
+  right: 7rem;
+  bottom: 2rem;
+  cursor: pointer;
+}
+
+.box .fa-eye-low-vision {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  cursor: pointer;
+}
 
 /* MAIN BODY (YOUR PROJECTS) -------------------------------------------------------------------------------- */
 
