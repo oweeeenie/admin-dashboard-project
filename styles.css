@@ -3,7 +3,7 @@ html {
     font-size: 16px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     height: 100%;
-    overflow: hidden;
+
   }
   
   *, *:before, *:after {
@@ -259,7 +259,7 @@ input[type="text"] {
 
 /* MAIN BODY (YOUR PROJECTS) -------------------------------------------------------------------------------- */
 
-/* RIGHT SIDEBAR -------------------------------------------------------------------------------------------- */
+/* RIGHT SIDEBAR ANNOUNCEMENTS ------------------------------------------------------------------------------ */
 
 .body-right-sidebar {
   display: grid;
@@ -311,4 +311,49 @@ input[type="text"] {
   padding-bottom: 10px;
 }
 
-/* RIGHT SIDEBAR -------------------------------------------------------------------------------------------- */
+/* RIGHT SIDEBAR ANNOUNCEMENTS ---------------------------------------------------------------------------------------- */
+
+/* RIGHT SIDEBAR TRENDING --------------------------------------------------------------------------------------------- */
+
+.body-trending {
+  padding: 3.5rem;
+}
+
+.trending-list {
+  background-color: var(--cards-and-header-color-and-right-sidebar);
+  width: 30rem;
+  padding: 1.5rem;
+  height: 22rem;
+  border-radius: 5%;
+  box-shadow: 0 4px 6px -2px black;
+}
+
+.trending-list img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 3px solid var(--primary-text-color);
+}
+
+.body-trending h3 {
+  color: var(--primary-text-color);
+  font-weight: bolder;
+  position: relative;
+  bottom: 1.2rem;
+}
+
+.trending-item {
+  display: flex;
+  gap: 30px;
+  padding-bottom: 20px;
+  align-items: center;
+  color: var(--primary-text-color);
+  padding-left: 5rem;
+}
+
+.trending-username {
+  font-weight: bold;
+  padding-bottom: 5px;
+  cursor: pointer;
+}
+
